@@ -101,6 +101,45 @@
             margin: 3px 3px 3px 0;
         }
 
+        /* 项目标签 */
+        .project-tag {
+            display: inline-block;
+            background-color: #f0e1f4;
+            color: #8a2be2;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 3px 3px 3px 0;
+            transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+        }
+
+        .project-tag:hover {
+            background-color: #d4b3ff;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 添加图标 */
+        .project-tag::before {
+            margin-right: 5px;
+        }
+
+        .project-icon-food::before {
+            content: "🍴";
+        }
+
+        .project-icon-cloud::before {
+            content: "☁️";
+        }
+
+        .project-icon-laptop::before {
+            content: "💻";
+        }
+
+        .project-icon-doc::before {
+            content: "📄";
+        }
+
         /* 响应式 */
         @media(max-width: 900px) {
             .container {
@@ -127,7 +166,7 @@
             <h3>Skills</h3>
             <div>
                 <span class="skill-tag">Java/Spring Boot</span>
-                <span class="skill-tag">Python/NumPy/Pandas/Tensorflow/Scikit-learn/sklearn</span>
+                <span class="skill-tag">Python/NumPy/Pandas/Tensorflow/Scikit-learn</span>
                 <span class="skill-tag">JavaScript/React</span>
                 <span class="skill-tag">Github</span>
                 <span class="skill-tag">Docker</span>
@@ -138,6 +177,14 @@
                 <span class="skill-tag">Linux</span>
                 <span class="skill-tag">Cloud/Azure</span>
             </div>
+
+            <h3>Projects</h3>
+            <div>
+                <a href="https://github.com/shaoxianduan/food-waste-reduction-platform" target="_blank" class="project-tag project-icon-food">Food Waste Reduction Platform</a>
+                <a href="https://github.com/shaoxianduan/Best-Buy-Cloud-Native-App" target="_blank" class="project-tag project-icon-laptop">Best Buy Cloud-Native App</a>
+                <a href="https://github.com/shaoxianduan/Terraform-and-Conftest-CI-CD-Pipeline" target="_blank" class="project-tag project-icon-cloud">Terraform & Conftest CI/CD Pipeline</a>
+                <a href="https://github.com/shaoxianduan/policy-lab" target="_blank" class="project-tag project-icon-doc">Policy Lab</a>
+            </div>
         </div>
 
         <!-- 右侧内容 -->
@@ -145,8 +192,7 @@
             <div class="card">
                 <h2>Profile</h2>
                 <ul>
-                    <li>Experienced IT professional with 10+ years in the computer industry, including 2 years in
-                        project management and 3 years in outsourcing.</li>
+                    <li>Experienced IT professional with 10+ years in the computer industry, including 2 years in project management and 3 years in outsourcing.</li>
                     <li>Specialized in hardware development, software engineering, and networking.</li>
                 </ul>
             </div>
@@ -156,7 +202,7 @@
                 <h3>Cloud Development and Operations Graduate Certificate | Algonquin College | 2024 - 2025</h3>
                 <ul>
                     <li>Cloud-Native Development: Java, micro-services, PaaS, SaaS</li>
-                    <li>DevOps & Automation: Linux scripting, CI/CD, Docker, Kubernetes,Terraform</li>
+                    <li>DevOps & Automation: Linux scripting, CI/CD, Docker, Kubernetes, Terraform</li>
                 </ul>
                 <h3>Computer Programming Diploma | Algonquin College | 2023 – 2024</h3>
                 <ul>
@@ -179,8 +225,8 @@
             </div>
 
             <div class="card">
-                <h2>Portfolio</h2>
-                <p><a href="https://github.com/shaoxianduan" target="_blank">View GitHub Projects</a></p>
+                <h2>Download CV</h2>
+                <p><a href="Shaoxian_Duan_CV.pdf" target="_blank">Click here to download my CV</a></p>
             </div>
         </div>
     </div>
