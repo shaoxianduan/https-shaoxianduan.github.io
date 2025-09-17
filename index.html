@@ -1,185 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shaoxian Duan - Portfolio</title>
-<style>
-/* 通用样式 */
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f3f6f8;
-    color: #333;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaoxian Duan - Portfolio</title>
+    <style>
+        /* 通用样式 */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f6f8;
+            color: #333;
+        }
 
-/* 页面容器 */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 20px auto;
-}
+        /* 页面容器 */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
 
-/* 左侧侧边栏 */
-.sidebar {
-    flex: 1 1 300px;
-    background-color: #fff;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    text-align: center;
-}
+        /* 左侧侧边栏 */
+        .sidebar {
+            flex: 1 1 300px;
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
 
-.sidebar img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-}
+        .sidebar img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
 
-.sidebar h2 {
-    margin: 10px 0 5px 0;
-    color: #0a66c2;
-}
+        .sidebar h2 {
+            margin: 10px 0 5px 0;
+            color: #0a66c2;
+        }
 
-.sidebar p, .sidebar a {
-    margin: 5px 0;
-    font-size: 0.95rem;
-    color: #555;
-}
+        .sidebar p,
+        .sidebar a {
+            margin: 5px 0;
+            font-size: 0.95rem;
+            color: #555;
+        }
 
-.sidebar a {
-    text-decoration: none;
-    color: #0a66c2;
-}
+        .sidebar a {
+            text-decoration: none;
+            color: #0a66c2;
+        }
 
-.sidebar a:hover {
-    text-decoration: underline;
-}
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
 
-/* 右侧内容区 */
-.main {
-    flex: 2 1 600px;
-    margin: 10px;
-}
+        /* 右侧内容区 */
+        .main {
+            flex: 2 1 600px;
+            margin: 10px;
+        }
 
-.card {
-    background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
 
-.card h2 {
-    color: #0a66c2;
-    border-bottom: 2px solid #0a66c2;
-    padding-bottom: 5px;
-}
+        .card h2 {
+            color: #0a66c2;
+            border-bottom: 2px solid #0a66c2;
+            padding-bottom: 5px;
+        }
 
-.card h3 {
-    color: #333;
-    margin-bottom: 5px;
-}
+        .card h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
 
-.card ul {
-    padding-left: 20px;
-}
+        .card ul {
+            padding-left: 20px;
+        }
 
-.skill-tag {
-    display: inline-block;
-    background-color: #e1ecf4;
-    color: #0a66c2;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    margin: 3px 3px 3px 0;
-}
+        .skill-tag {
+            display: inline-block;
+            background-color: #e1ecf4;
+            color: #0a66c2;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 3px 3px 3px 0;
+        }
 
-/* 响应式 */
-@media(max-width: 900px){
-    .container {
-        flex-direction: column;
-    }
-}
-</style>
+        /* 响应式 */
+        @media(max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<div class="container">
-    <!-- 左侧侧边栏 -->
-    <div class="sidebar">
-        <img src="https://avatars.githubusercontent.com/u/your-github-avatar" alt="Shaoxian Duan">
-        <h2>Shaoxian Duan</h2>
-        <p>duan0027@algonquinlive.com</p>
-        <p>duansx423@gmail.com</p>
-        <p>613-698-9423</p>
-        <p>Kanata, Ottawa, ON</p>
-        <p><a href="https://www.linkedin.com/in/shaoxian-duan-4659a92b7/" target="_blank">LinkedIn</a></p>
-        <p><a href="https://github.com/shaoxianduan" target="_blank">GitHub</a></p>
+    <div class="container">
+        <!-- 左侧侧边栏 -->
+        <div class="sidebar">
+            <img src="duan.png" alt="Shaoxian Duan">
+            <h2>Shaoxian Duan</h2>
+            <p>duan0027@algonquinlive.com</p>
+            <p>duansx423@gmail.com</p>
+            <p>613-698-9423</p>
+            <p>Kanata, Ottawa, ON</p>
+            <p><a href="https://www.linkedin.com/in/shaoxian-duan-4659a92b7/" target="_blank">LinkedIn</a></p>
+            <p><a href="https://github.com/shaoxianduan" target="_blank">GitHub</a></p>
 
-        <h3>Skills</h3>
-        <div>
-            <span class="skill-tag">Java/Spring Boot</span>
-            <span class="skill-tag">Python/Tensflow</span>
-            <span class="skill-tag">JavaScript/React</span>
-            <span class="skill-tag">Github</span>
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">Kubernetes</span>
-            <span class="skill-tag">Terraform</span>
-            <span class="skill-tag">CI/CD</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">Linux</span>
-            <span class="skill-tag">Cloud/Azure</span>
+            <h3>Skills</h3>
+            <div>
+                <span class="skill-tag">Java/Spring Boot</span>
+                <span class="skill-tag">Python/NumPy/Pandas/Tensorflow/Scikit-learn/sklearn</span>
+                <span class="skill-tag">JavaScript/React</span>
+                <span class="skill-tag">Github</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Kubernetes</span>
+                <span class="skill-tag">Terraform</span>
+                <span class="skill-tag">CI/CD</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Linux</span>
+                <span class="skill-tag">Cloud/Azure</span>
+            </div>
+        </div>
+
+        <!-- 右侧内容 -->
+        <div class="main">
+            <div class="card">
+                <h2>Profile</h2>
+                <ul>
+                    <li>Experienced IT professional with 10+ years in the computer industry, including 2 years in
+                        project management and 3 years in outsourcing.</li>
+                    <li>Specialized in hardware development, software engineering, and networking.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Education</h2>
+                <h3>Cloud Development and Operations Graduate Certificate | Algonquin College | 2024 - 2025</h3>
+                <ul>
+                    <li>Cloud-Native Development: Java, micro-services, PaaS, SaaS</li>
+                    <li>DevOps & Automation: Linux scripting, CI/CD, Docker, Kubernetes,Terraform</li>
+                </ul>
+                <h3>Computer Programming Diploma | Algonquin College | 2023 – 2024</h3>
+                <ul>
+                    <li>Database Systems & SQL</li>
+                    <li>Java/Web Programming: Java, JavaScript, HTML, CSS, PHP</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Experience</h2>
+                <h3>International Business Director | Beijing Yangliping Investment | 2012 – 2022</h3>
+                <ul>
+                    <li>Executed marketing strategies achieving over 20% annual sales growth.</li>
+                    <li>Led IPO raising 110 million RMB.</li>
+                </ul>
+                <h3>Department Manager | Beijing Hongmahuayi | 2007 – 2011</h3>
+                <ul>
+                    <li>Directed website development and digital marketing campaigns.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Portfolio</h2>
+                <p><a href="https://github.com/shaoxianduan" target="_blank">View GitHub Projects</a></p>
+            </div>
         </div>
     </div>
-
-    <!-- 右侧内容 -->
-    <div class="main">
-        <div class="card">
-            <h2>Profile</h2>
-            <ul>
-                <li>Experienced IT professional with 10+ years in the computer industry, including 2 years in project management and 3 years in outsourcing.</li>
-                <li>Specialized in hardware development, software engineering, and networking.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>Education</h2>
-            <h3>Cloud Development and Operations Graduate Certificate | Algonquin College | 2024 - 2025</h3>
-            <ul>
-                <li>Cloud-Native Development: Java, micro-services, PaaS, SaaS</li>
-                <li>DevOps & Automation: Linux scripting, CI/CD, Docker, Kubernetes,Terraform</li>
-            </ul>
-            <h3>Computer Programming Diploma | Algonquin College | 2023 – 2024</h3>
-            <ul>
-                <li>Database Systems & SQL</li>
-                <li>Java/Web Programming: Java, JavaScript, HTML, CSS, PHP</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>Experience</h2>
-            <h3>International Business Director | Beijing Yangliping Investment | 2012 – 2022</h3>
-            <ul>
-                <li>Executed marketing strategies achieving over 20% annual sales growth.</li>
-                <li>Led IPO raising 110 million RMB.</li>
-            </ul>
-            <h3>Department Manager | Beijing Hongmahuayi | 2007 – 2011</h3>
-            <ul>
-                <li>Directed website development and digital marketing campaigns.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>Portfolio</h2>
-            <p><a href="https://github.com/shaoxianduan" target="_blank">View GitHub Projects</a></p>
-        </div>
-    </div>
-</div>
 
 </body>
+
 </html>
