@@ -10,8 +10,17 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f3f6f8;
+            background-color: #f7f8fa;
             color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
         /* 页面容器 */
@@ -26,19 +35,20 @@
         .sidebar {
             flex: 1 1 300px;
             background-color: #fff;
-            padding: 20px;
+            padding: 25px 20px;
             margin: 10px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
             text-align: center;
         }
 
         .sidebar img {
-            width: 120px;
-            height: 120px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 15px;
+            border: 3px solid #0a66c2;
         }
 
         .sidebar h2 {
@@ -46,34 +56,83 @@
             color: #0a66c2;
         }
 
-        .sidebar p,
-        .sidebar a {
-            margin: 5px 0;
+        .sidebar p {
+            margin: 4px 0;
             font-size: 0.95rem;
             color: #555;
         }
 
-        .sidebar a {
-            text-decoration: none;
-            color: #0a66c2;
+        .sidebar h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #333;
+            border-bottom: 1px solid #0a66c2;
+            padding-bottom: 4px;
         }
 
-        .sidebar a:hover {
-            text-decoration: underline;
+        .skill-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #cfd9f4, #e2ebf8);
+            color: #0a66c2;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 3px 3px 3px 0;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
+
+        .skill-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        /* 项目标签 */
+        .project-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffe1e8, #f8e2f8);
+            color: #8a2be2;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 4px 4px 4px 0;
+            transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+        }
+
+        .project-tag:hover {
+            background: linear-gradient(135deg, #d4b3ff, #f0c0ff);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 项目图标 */
+        .project-tag::before {
+            margin-right: 6px;
+        }
+
+        .project-icon-food::before { content: "🍴"; }
+        .project-icon-cloud::before { content: "☁️"; }
+        .project-icon-laptop::before { content: "💻"; }
+        .project-icon-doc::before { content: "📄"; }
+        .project-icon-python::before { content: "🐍"; }
 
         /* 右侧内容区 */
         .main {
-            flex: 2 1 600px;
+            flex: 2 1 650px;
             margin: 10px;
         }
 
         .card {
             background-color: #fff;
-            padding: 20px;
+            padding: 22px;
             margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
         }
 
         .card h2 {
@@ -84,73 +143,27 @@
 
         .card h3 {
             color: #333;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
         }
 
         .card ul {
             padding-left: 20px;
         }
 
-        .skill-tag {
-            display: inline-block;
-            background-color: #e1ecf4;
-            color: #0a66c2;
-            padding: 5px 10px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            margin: 3px 3px 3px 0;
-        }
-
-        /* 项目标签 */
-        .project-tag {
-            display: inline-block;
-            background-color: #f0e1f4;
-            color: #8a2be2;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            margin: 3px 3px 3px 0;
-            transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
-        }
-
-        .project-tag:hover {
-            background-color: #d4b3ff;
-            transform: translateY(-3px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        /* 添加图标 */
-        .project-tag::before {
-            margin-right: 5px;
-        }
-
-        .project-icon-food::before {
-            content: "🍴";
-        }
-
-        .project-icon-cloud::before {
-            content: "☁️";
-        }
-
-        .project-icon-laptop::before {
-            content: "💻";
-        }
-
-        .project-icon-doc::before {
-            content: "📄";
-        }
-
         /* 响应式 */
-        @media(max-width: 900px) {
+        @media (max-width: 900px) {
             .container {
                 flex-direction: column;
+            }
+
+            .sidebar, .main {
+                flex: 1 1 100%;
             }
         }
     </style>
 </head>
 
 <body>
-
     <div class="container">
         <!-- 左侧侧边栏 -->
         <div class="sidebar">
@@ -177,15 +190,15 @@
                 <span class="skill-tag">Linux</span>
                 <span class="skill-tag">Cloud/Azure</span>
             </div>
-     
-            <h3>Azure ad Java Projects</h3> 
+
+            <h3>Azure & Java Projects</h3>
             <div>
-                <a href="https://github.com/shaoxianduan/food-waste-reduction-platform" target="_blank" class="project-tag project-icon-food">Food Waste Reduction Platform</a>
-                <a href="https://github.com/shaoxianduan/Best-Buy-Cloud-Native-App" target="_blank" class="project-tag project-icon-laptop">Best Buy Cloud-Native App</a>
-                <a href="https://github.com/shaoxianduan/Terraform-and-Conftest-CI-CD-Pipeline" target="_blank" class="project-tag project-icon-cloud">Terraform & Conftest CI/CD Pipeline</a>
+                <a href="https://github.com/shaoxianduan/food-waste-reduction-platform" target="_blank" class="project-tag project-icon-food">Food Waste Reduction</a>
+                <a href="https://github.com/shaoxianduan/Best-Buy-Cloud-Native-App" target="_blank" class="project-tag project-icon-laptop">Best Buy Cloud App</a>
+                <a href="https://github.com/shaoxianduan/Terraform-and-Conftest-CI-CD-Pipeline" target="_blank" class="project-tag project-icon-cloud">Terraform & CI/CD</a>
                 <a href="https://github.com/shaoxianduan/policy-lab" target="_blank" class="project-tag project-icon-doc">Policy Lab</a>
-            <div>
-                
+            </div>
+
             <h3>Python Projects</h3>
             <div>
                 <a href="https://github.com/shaoxianduan/project1" target="_blank" class="project-tag project-icon-python">Project 1</a>
@@ -193,7 +206,6 @@
                 <a href="https://github.com/shaoxianduan/project3" target="_blank" class="project-tag project-icon-python">Project 3</a>
                 <a href="https://github.com/shaoxianduan/project4" target="_blank" class="project-tag project-icon-python">Project 4</a>
             </div>
-
         </div>
 
         <!-- 右侧内容 -->
@@ -239,7 +251,5 @@
             </div>
         </div>
     </div>
-
 </body>
-
 </html>
