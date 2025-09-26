@@ -55,8 +55,9 @@ It supports **currency conversion**, **length**, **speed**, **volume**, **mass**
 
 ## Usage
 
-1. Clone the repository or download the script:
+1. download this script:
 
 ```bash
-git clone https://github.com/shaoxianduan/Python60.git
-cd Python60
+# curl
+curl -o converter.py https://raw.githubusercontent.com/shaoxianduan/shaoxianduan.github.io/main/python/converter/converter.py
+
